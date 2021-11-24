@@ -1,0 +1,62 @@
+:root {
+    /*colors*/
+    --gray: hsla(0, 0%, 62%, 1);
+    --blue: hsla(218, 91%, 35%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+
+    /*typography*/
+    --font-family: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    min-width: 320px;
+}
+
+/* body {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+} */
+
+h2 {
+    color: var(--black);
+}
+
+.main-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height:100vh;
+    height: 100%;
+}
+
+.logo {
+    background-color: var(--black);
+    width: 100px;
+    height: 200px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container__services {
+    display: flex;
+    padding: 20px;
+}
+
+.form-container__dates {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
