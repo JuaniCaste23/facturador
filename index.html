@@ -37,16 +37,21 @@
                     <div class="input-box"><input name="radio" type="radio" value="Mantenimiento">
                     <label for="">Mantenimiento</label></div>
                 </div>
-                <h2 class="form-container__title">02 Datos de pago</h2>
+        
                 <div class="form-container__dates">
+                    <h2 class="form-container__title">02 Datos de pago</h2>
                     <div class="input-box"><label>Nombre y apellido</label><br><input type="text"></div>
-                    <div class="input-box"><label>Fecha de compra</label><br><input type="text"></div>
+                    <div class="input-box"><label>Fecha de compra</label><br><input type="date"></div>
                     <div class="input-box"><label>Monto</label><br><input type="number"></div>
+
+                    <button class="form-container__button" type="submit">Generar Factura</button>
+                    <button class="form-container__button-reset" type="reset">Resetear valores</button>
                 </div>
-                <button class="form-container__button" type="submit">Generar Factura</button>
-                <button class="form-container__button-reset" type="reset">Resetear valores</button>
+
+                <div class="image-container">
+                    <img src="./assets/img/macbook.jpeg" alt="">
+                </div>
             </form>
-            <div class="image-container"></div>
     </main>
     <script src="/js/script.js"></script>
 </body>
