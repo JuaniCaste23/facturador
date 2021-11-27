@@ -7,7 +7,7 @@
     --just-white: #ffffff;
 
     /*typography*/
-    --font-family: none;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 * {
@@ -22,43 +22,45 @@ html {
     min-width: 320px;
 }
 
-/* body {
+body {
     font-size: var(--font-size);
-    font-family: var(--font-family);
-} */
+    font-family: var(--font-roboto);
+    background-color: var(--just-white);
+} 
 
-h2 {
-    color: var(--black);
+.main-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height:100vh;
 }
 
 .aside-menu{
-    width: 100px;
-    height: 100vh;
+    width: 90px;
+    height: 78%;
+    margin-left: 50px;
+    margin-top: 5.4%;
     background-color: var(--black);
     position: fixed;
-
+    z-index: 666;
 }
 
-.main-container {
-    /* display: flex; 
-    justify-content: center;
-    align-items: center; */
-    width: 100%;
-    min-height:100vh;
-    background-color: var(--gray-bg);
-}
-
-.logo {
-
-}
 .form-container{
-    margin-left: 100px;
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    min-height: 600px;
+    margin-left: 130px;
+    margin-right: 60px;
     padding: 60px;
+    background-color: var(--gray-bg);
 }
 
 .form-container__title{
     font-size: 3.8rem;
     font-weight: bold;
+    color: var(--black);
 }
 
 .form-container__services {
@@ -76,6 +78,41 @@ h2 {
     --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     margin-right: 30px;
+    margin-top: 30px;
+}
+
+input {
+    outline:none;
+    border: none;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-container__services .input-box label {
+    margin-right: 20px;
+}
+
+.form-container__services label {
+    position: relative;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--black);
+    margin-right: 50px;
+}
+
+.form-container__dates .input-box input {
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 35px;
+}
+
+.form-container__dates .input-box label{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--gray);
+    margin-bottom: 20px;
+    margin-right: 120px;
 }
 
 .input-box__plan{
@@ -84,8 +121,31 @@ h2 {
     font-weight: 700;
 }
 
+.input-box__plan:focus{
+    border: 1px solid white;
+    outline: none;
+}
+
 .form-container__dates {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0px;
+    
+}
+
+.form-container__button {
+    border: none;
+    font-size: 1.8rem;
+    color: var(--just-white);
+    background-color: var(--black);
+    padding: 15px 60px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.form-container__button-reset {
+    display: flex;
+    color: var(--gray);
+    border: none;
+    font-weight: bold;
 }
